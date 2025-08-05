@@ -1,12 +1,14 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Rocket } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { ThemeSwitcher } from '../theme-switcher';
 
 const navLinks = [
-  { href: '#projects', label: 'Projects' },
-  { href: '#experience', label: 'Experience' },
+  { href: '#hero', label: 'Home' },
+  { href: '#about', label: 'About' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#projects', label: 'Portfolio' },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -15,8 +17,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <Rocket className="h-6 w-6 text-primary" />
-          <span className="font-headline text-lg font-bold">Nebula Portfolio</span>
+          <span className="font-headline text-lg font-bold">Marudin Rofizka</span>
         </Link>
         
         <div className="flex items-center gap-4">
@@ -41,13 +42,12 @@ export default function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right">
-                <SheetHeader className="sr-only">
-                  <SheetTitle>Menu</SheetTitle>
+                <SheetHeader>
+                  <SheetTitle className="sr-only">Menu</SheetTitle>
                 </SheetHeader>
                 <div className="grid gap-4 py-6">
                   <Link href="/" className="flex items-center gap-2 mb-4">
-                    <Rocket className="h-6 w-6 text-primary" />
-                    <span className="font-headline text-lg font-bold">Nebula Portfolio</span>
+                    <span className="font-headline text-lg font-bold">Marudin Rofizka</span>
                   </Link>
                   {navLinks.map((link) => (
                     <Link
