@@ -8,12 +8,12 @@ export default function About() {
     <section id="about" className="container grid md:grid-cols-2 place-items-center gap-10 py-20 md:py-24">
       <div className="animate-in fade-in-up duration-500">
         <Image 
-          src="https://placehold.co/400x400.png"
+          src="https://res.cloudinary.com/diyyyav1i/image/upload/v1754367044/IMG_20180227_131646_gqhsth.jpg"
           alt="About Marudin Rofizka"
           width={400}
           height={400}
           className="rounded-lg"
-          data-ai-hint="person coding"
+          data-ai-hint="personal photo"
         />
       </div>
       <div className="flex flex-col items-start gap-4 text-left animate-in fade-in-up duration-500 delay-200">
