@@ -40,8 +40,9 @@ export default function Hero() {
           alt="Marudin Rofizka"
           width={400}
           height={400}
-          className="rounded-full"
+          className="rounded-full object-cover aspect-square"
           data-ai-hint="profile picture"
+          priority
         />
       </div>
     </section>

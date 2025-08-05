@@ -22,28 +22,28 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Project 1",
-    description: "A short description of the first project.",
+    title: "TemanRumah.AI",
+    description: "Sebuah platform AI Matchmaking untuk menemukan properti yang benar-benar sesuai gaya hidup Anda.",
     longDescription: "A more detailed description of the project, explaining the technologies used and the problems it solves.",
-    tags: ["Next.js", "Tailwind CSS", "TypeScript"],
-    image: "https://placehold.co/600x400.png",
+    tags: ["Next.js", "Tailwind CSS", "TypeScript", "Firebase"],
+    image: "https://res.cloudinary.com/diyyyav1i/image/upload/v1754368328/Macbook-Air-www.temanrumah.pro_2_yqk8eu.png",
     dataAiHint: "modern web application"
   },
   {
-    title: "Project 2",
-    description: "A short description of the second project.",
+    title: "Aurel Plastik Digital",
+    description: "Toko online kemasan plastik PE custom, polymailer, dan lainnya untuk bisnis Anda",
     longDescription: "A more detailed description of the project, explaining the technologies used and the problems it solves.",
-    tags: ["React", "Node.js", "Express"],
-    image: "https://placehold.co/600x400.png",
-    dataAiHint: "dashboard analytics"
+    tags: ["React", "Node.js", "Firestore", "Clerk"],
+    image: "https://res.cloudinary.com/diyyyav1i/image/upload/v1754368240/Macbook-Air-aurelplastik.com_umqxen.png",
+    dataAiHint: "e-commerce user interface"
   },
   {
-    title: "Project 3",
-    description: "A short description of the third project.",
+    title: "CRM Lead SyncPro",
+    description: "Management Lead Propsek Meta Ads Property yang didukung dengan AI Cerdas",
     longDescription: "A more detailed description of the project, explaining the technologies used and the problems it solves.",
     tags: ["Vue.js", "Firebase", "Vuetify"],
-    image: "https://placehold.co/600x400.png",
-    dataAiHint: "e-commerce user interface"
+    image: "https://res.cloudinary.com/diyyyav1i/image/upload/v1754368736/Macbook-Air-localhost_13_v0onpe.png",
+    dataAiHint: "dashboard analytics"
   },
 ];
 

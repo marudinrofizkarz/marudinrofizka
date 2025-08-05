@@ -12,7 +12,7 @@ export default function About() {
           alt="About Marudin Rofizka"
           width={400}
           height={400}
-          className="rounded-lg"
+          className="rounded-lg object-cover aspect-square"
           data-ai-hint="personal photo"
         />
       </div>
