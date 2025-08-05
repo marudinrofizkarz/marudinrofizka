@@ -36,7 +36,7 @@ export default function Hero() {
       </div>
       <div className="order-1 md:order-2 animate-in fade-in-up duration-500 delay-100">
         <Image 
-          src="https://placehold.co/400x400.png"
+          src="https://marudinrofizka.github.io/images/profile.jpg"
           alt="Marudin Rofizka"
           width={400}
           height={400}
