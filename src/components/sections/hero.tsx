@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Github, Linkedin, Send } from 'lucide-react';
+import { Github, Linkedin, Send, Code, Volume2 } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Hero() {
@@ -35,15 +35,27 @@ export default function Hero() {
         </div>
       </div>
       <div className="order-1 md:order-2 animate-in fade-in-up duration-500 delay-100">
-        <Image 
-          src="https://marudinrofizka.github.io/images/profile.jpg"
-          alt="Marudin Rofizka"
-          width={400}
-          height={400}
-          className="rounded-full object-cover aspect-square"
-          data-ai-hint="profile picture"
-          priority
-        />
+        <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px]">
+          <div className="absolute inset-0 bg-primary/20 rounded-full animate-pulse-slow"></div>
+          <div className="absolute inset-4 bg-primary/30 rounded-full animate-pulse-slow animation-delay-200"></div>
+          <div className="absolute inset-8 flex items-center justify-center">
+            <Image 
+              src="https://marudinrofizka.github.io/images/profile.jpg"
+              alt="Marudin Rofizka"
+              width={400}
+              height={400}
+              className="rounded-full object-cover aspect-square"
+              data-ai-hint="profile picture"
+              priority
+            />
+          </div>
+          <div className="absolute top-10 -right-2 md:top-16 md:-right-4 w-16 h-16 bg-background rounded-full shadow-lg flex items-center justify-center animate-float animation-delay-500">
+            <Code className="h-8 w-8 text-primary" />
+          </div>
+          <div className="absolute bottom-10 -left-2 md:bottom-16 md:-left-4 w-16 h-16 bg-background rounded-full shadow-lg flex items-center justify-center animate-float animation-delay-800">
+            <Volume2 className="h-8 w-8 text-primary" />
+          </div>
+        </div>
       </div>
     </section>
   );
