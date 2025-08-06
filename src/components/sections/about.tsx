@@ -22,7 +22,7 @@ export default function About() {
           Web developer, with extensive knowledge and years of experience, working in web technologies and Ui / Ux design, delivering quality work.
         </p>
         <Button asChild size="lg">
-          <Link href="#">
+          <Link href="https://marudinrofizka.github.io/images/Marudin_Rofizka-1739294051760.pdf" target="_blank" rel="noreferrer">
             Download CV <Download className="ml-2 h-4 w-4" />
           </Link>
         </Button>
