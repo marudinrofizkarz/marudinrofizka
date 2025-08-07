@@ -39,7 +39,7 @@ export default function Hero() {
             <Linkedin className="h-7 w-7 hover:text-primary transition-colors" />
           </Link>
         </div>
-        <div className="flex items-center gap-4 delay-400 mt-2">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 delay-400 mt-2 w-full sm:w-auto">
           <Button asChild size="lg">
             <Link href="#contact">
               Contact Me <Send className="ml-2 h-4 w-4" />
