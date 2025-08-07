@@ -10,6 +10,9 @@ config.autoAddCss = false
 export const metadata: Metadata = {
   title: 'Marudin Rofizka',
   description: 'Portofolio Web Developer Marudin Rofizka.',
+  openGraph: {
+    images: ['https://marudinrofizka.github.io/images/profile.jpg'],
+  },
 };
 
 export default function RootLayout({
