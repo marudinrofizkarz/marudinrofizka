@@ -46,7 +46,7 @@ export default function Hero() {
             </Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
-            <Link href="/Marudin-Rofizka-CV.pdf" target="_blank" rel="noopener noreferrer">
+            <Link href="/CV & Portofolio Marudin.pdf" target="_blank" rel="noopener noreferrer">
               Download CV <Download className="ml-2 h-4 w-4" />
             </Link>
           </Button>
