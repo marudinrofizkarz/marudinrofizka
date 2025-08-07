@@ -1,7 +1,10 @@
+'use client';
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin, Send, Code, Volume2 } from 'lucide-react';
 import Image from 'next/image';
+import { Typewriter } from 'react-simple-typewriter'
 
 export default function Hero() {
   return (
@@ -11,11 +14,21 @@ export default function Hero() {
           <h1 className="font-headline text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
             Marudin Rofizka
           </h1>
-          <h3 className="text-xl md:text-2xl text-muted-foreground mt-2">Web Developer</h3>
+          <h3 className="text-xl md:text-2xl text-muted-foreground mt-2">
+            <Typewriter
+              words={['Web Developer', 'Digital Marketing Specialist', 'IT Professional']}
+              loop={0}
+              cursor
+              cursorStyle='_'
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+          </h3>
         </div>
         <div className="delay-200">
           <p className="max-w-[700px] text-lg text-muted-foreground sm:text-xl">
-            High level experience in web design and development knowledge, producing quality work.
+            Transforming Ideas into Digital Success Stories
           </p>
         </div>
         <div className="flex items-center gap-4 delay-300">
