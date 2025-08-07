@@ -61,28 +61,74 @@ export default function Experience() {
         </h2>
       </div>
       <div className="relative">
-        <div className="absolute left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
-        {experienceData.map((item, index) => (
-          <div key={index} className={`relative mb-12 flex w-full items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-            <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8' : 'pl-8'} animate-in ${index % 2 === 0 ? 'slide-in-from-left-40' : 'slide-in-from-right-40'} duration-1000`}>
-              <Card className={`transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1 ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
-                <CardHeader>
-                  <p className="text-sm text-primary">{item.date}</p>
-                  <CardTitle className="font-headline text-lg">{item.title}</CardTitle>
-                  <p className="text-sm font-medium text-muted-foreground">{item.company}</p>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>{item.description}</CardDescription>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 transform animate-in zoom-in-50 duration-500">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-primary bg-background">
-                <Briefcase className="h-5 w-5 text-primary" />
+        {/* Timeline for medium and up screens */}
+        <div className="absolute left-1/2 top-0 hidden h-full w-0.5 -translate-x-1/2 bg-border md:block"></div>
+        {/* Timeline for small screens */}
+        <div className="absolute left-5 top-0 h-full w-0.5 -translate-x-1/2 bg-border md:hidden"></div>
+        
+        <div className="space-y-12">
+          {experienceData.map((item, index) => (
+            <div key={index} className="relative flex w-full items-start md:items-center">
+              {/* Desktop layout */}
+              <div className={`hidden w-1/2 md:flex ${index % 2 === 0 ? 'justify-end pr-8' : 'justify-start pl-8'}`}>
+                {index % 2 === 0 && (
+                  <Card className="max-w-md w-full transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1 text-right">
+                    <CardHeader>
+                      <p className="text-sm text-primary">{item.date}</p>
+                      <CardTitle className="font-headline text-lg">{item.title}</CardTitle>
+                      <p className="text-sm font-medium text-muted-foreground">{item.company}</p>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription>{item.description}</CardDescription>
+                    </CardContent>
+                  </Card>
+                )}
               </div>
+              
+              <div className="absolute left-1/2 top-1/2 z-10 hidden -translate-x-1/2 -translate-y-1/2 transform animate-in zoom-in-50 duration-500 md:block">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-primary bg-background">
+                  <Briefcase className="h-5 w-5 text-primary" />
+                </div>
+              </div>
+
+              <div className="absolute left-5 top-0 z-10 -translate-x-1/2 -translate-y-0 transform animate-in zoom-in-50 duration-500 md:hidden">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-primary bg-background">
+                  <Briefcase className="h-5 w-5 text-primary" />
+                </div>
+              </div>
+
+              <div className={`hidden w-1/2 md:flex ${index % 2 === 0 ? 'justify-start pl-8' : 'justify-end pr-8'}`}>
+                {index % 2 !== 0 && (
+                  <Card className="max-w-md w-full transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1 text-left">
+                     <CardHeader>
+                      <p className="text-sm text-primary">{item.date}</p>
+                      <CardTitle className="font-headline text-lg">{item.title}</CardTitle>
+                      <p className="text-sm font-medium text-muted-foreground">{item.company}</p>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription>{item.description}</CardDescription>
+                    </CardContent>
+                  </Card>
+                )}
+              </div>
+
+              {/* Mobile layout */}
+              <div className="w-full pl-12 md:hidden">
+                <Card className="transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1">
+                  <CardHeader>
+                    <p className="text-sm text-primary">{item.date}</p>
+                    <CardTitle className="font-headline text-lg">{item.title}</CardTitle>
+                    <p className="text-sm font-medium text-muted-foreground">{item.company}</p>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription>{item.description}</CardDescription>
+                  </CardContent>
+                </Card>
+              </div>
+
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
