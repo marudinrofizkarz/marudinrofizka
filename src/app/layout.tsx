@@ -8,10 +8,11 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://marudinrofizka.netlify.app'),
   title: 'Marudin Rofizka',
   description: 'Portofolio Web Developer Marudin Rofizka.',
   openGraph: {
-    images: ['https://marudinrofizka.github.io/images/profile.jpg'],
+    images: ['/images/profile.jpg'],
   },
 };
 
