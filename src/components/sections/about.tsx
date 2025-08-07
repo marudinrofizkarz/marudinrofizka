@@ -30,13 +30,13 @@ const aboutData = {
 
 export default function About() {
   return (
-    <section id="about" className="container py-20 md:py-24">
-      <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center animate-in fade-in-up duration-500">
+    <section id="about" className="container py-20 md:py-24 animate-in fade-in-up duration-1000">
+      <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
         <h2 className="font-headline text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">
           About Me
         </h2>
       </div>
-      <div className="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-3 animate-in fade-in-up duration-500 delay-200">
+      <div className="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
         <div className="space-y-6 lg:col-span-1">
           <p className="text-muted-foreground sm:text-lg">
             {aboutData.description}

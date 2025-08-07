@@ -41,32 +41,32 @@ const projects = [
     title: "CRM Lead SyncPro",
     description: "Management Lead Propsek Meta Ads Property yang didukung dengan AI Cerdas",
     longDescription: "A more detailed description of the project, explaining the technologies used and the problems it solves.",
-    tags: ["Vue.js", "Firebase", "Vuetify"],
+    tags: ["Next.js", "Firebase", "Vuetify"],
     image: "https://res.cloudinary.com/diyyyav1i/image/upload/v1754368736/Macbook-Air-localhost_13_v0onpe.png",
     dataAiHint: "dashboard analytics"
   },
   {
-    title: "Project Four",
-    description: "A brief description of你的 fourth project, highlighting its key features and purpose.",
+    title: "Paramount Proejct",
+    description: "A brief description of your fourth project, highlighting its key features and purpose.",
     longDescription: "A more detailed description of the project, explaining the technologies used and the problems it solves.",
-    tags: ["SvelteKit", "PocketBase", "Tailwind CSS"],
-    image: "https://placehold.co/600x400.png",
+    tags: ["Next JS", "Clerk", "Tailwind CSS"],
+    image: "https://res.cloudinary.com/dx7xttb8a/image/upload/v1754537817/Macbook-Air-localhost_14_sidvg8.png",
     dataAiHint: "minimalist website design"
   },
   {
-    title: "Project Five",
+    title: "Green Paradise City",
     description: "A brief description of your fifth project, highlighting its key features and purpose.",
     longDescription: "A more detailed description of the project, explaining the technologies used and the problems it solves.",
-    tags: ["Astro", "React", "MDX"],
-    image: "https://placehold.co/600x400.png",
+    tags: ["Laravel", "Tailwind CSS", "PHP Filament"],
+    image: "https://res.cloudinary.com/dx7xttb8a/image/upload/v1754537960/Macbook-Air-greenparadise.id_li775c.png",
     dataAiHint: "personal blog homepage"
   },
   {
-    title: "Project Six",
+    title: "Rumah ImpianKu Info",
     description: "A brief description of your sixth project, highlighting its key features and purpose.",
     longDescription: "A more detailed description of the project, explaining the technologies used and the problems it solves.",
-    tags: ["Nuxt.js", "Supabase", "UnoCSS"],
-    image: "https://placehold.co/600x400.png",
+    tags: ["Laravel", "MysQL", "TailwindCSS"],
+    image: "https://res.cloudinary.com/dx7xttb8a/image/upload/v1754538052/Macbook-Air-rumahimpianku.info_qkqpyu.png",
     dataAiHint: "mobile app interface"
   },
 ];
@@ -74,8 +74,8 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="container space-y-8 py-12 md:py-24">
-      <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center animate-in fade-in-up duration-500">
+    <section id="projects" className="container space-y-8 py-12 md:py-24 animate-in fade-in-up duration-1000">
+      <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
         <h2 className="font-headline text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">Portfolio</h2>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
           Most recent work
@@ -85,8 +85,8 @@ export default function Projects() {
         {projects.map((project, index) => (
           <Dialog key={project.title}>
             <DialogTrigger asChild>
-              <div className="animate-in fade-in-up duration-500 delay-200" style={{ animationDelay: `${index * 150}ms`}}>
-                <Card className="group overflow-hidden rounded-lg transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2 cursor-pointer">
+              <div className="animate-in fade-in-up duration-500" style={{ animationDelay: `${index * 150}ms`}}>
+                <Card className="group overflow-hidden rounded-lg transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2 cursor-pointer h-full">
                   <CardHeader className="p-0">
                     <div className="aspect-video overflow-hidden">
                       <Image

@@ -8,8 +8,8 @@ import { Typewriter } from 'react-simple-typewriter'
 
 export default function Hero() {
   return (
-    <section id="hero" className="container grid md:grid-cols-2 place-items-center gap-10 py-20 md:py-32">
-      <div className="flex flex-col items-start gap-4 text-left order-2 md:order-1 animate-in fade-in-up duration-500">
+    <section id="hero" className="container grid md:grid-cols-2 place-items-center gap-10 py-20 md:py-32 animate-in fade-in-up duration-1000">
+      <div className="flex flex-col items-start gap-4 text-left order-2 md:order-1">
         <div>
           <h1 className="font-headline text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
             Marudin Rofizka
@@ -47,7 +47,7 @@ export default function Hero() {
           </Button>
         </div>
       </div>
-      <div className="order-1 md:order-2 animate-in fade-in-up duration-500 delay-100">
+      <div className="order-1 md:order-2">
         <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px]">
           <div className="absolute inset-0 bg-primary/20 rounded-full animate-pulse-slow"></div>
           <div className="absolute inset-4 bg-primary/30 rounded-full animate-pulse-slow animation-delay-200"></div>

@@ -54,17 +54,17 @@ const experienceData = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="container space-y-12 py-12 md:py-24">
-      <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center animate-in fade-in-up duration-500">
+    <section id="experience" className="container space-y-12 py-12 md:py-24 animate-in fade-in-up duration-1000">
+      <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
         <h2 className="font-headline text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">
           Professional Experience
         </h2>
       </div>
-      <div className="relative animate-in fade-in-up duration-500 delay-200">
+      <div className="relative">
         <div className="absolute left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
         {experienceData.map((item, index) => (
           <div key={index} className={`relative mb-12 flex w-full items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-            <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8' : 'pl-8'}`}>
+            <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8' : 'pl-8'} animate-in ${index % 2 === 0 ? 'slide-in-from-left-40' : 'slide-in-from-right-40'} duration-1000`}>
               <Card className={`transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1 ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
                 <CardHeader>
                   <p className="text-sm text-primary">{item.date}</p>
@@ -76,7 +76,7 @@ export default function Experience() {
                 </CardContent>
               </Card>
             </div>
-            <div className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 transform">
+            <div className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 transform animate-in zoom-in-50 duration-500">
               <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-primary bg-background">
                 <Briefcase className="h-5 w-5 text-primary" />
               </div>
