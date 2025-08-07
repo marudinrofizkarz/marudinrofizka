@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Github, Linkedin, Send, Download, Code, Volume2 } from 'lucide-react';
+import { Github, Linkedin, Send, Download, Code, Megaphone } from 'lucide-react';
 import Image from 'next/image';
 import { Typewriter } from 'react-simple-typewriter'
 
@@ -45,7 +45,7 @@ export default function Hero() {
               Contact Me <Send className="ml-2 h-4 w-4" />
             </Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
+          <Button asChild size="lg" variant="outline">
             <Link href="https://marudinrofizka.github.io/images/Marudin_Rofizka-1739294051760.pdf" target="_blank" rel="noopener noreferrer">
               Download CV <Download className="ml-2 h-4 w-4" />
             </Link>
@@ -71,7 +71,7 @@ export default function Hero() {
             <Code className="h-8 w-8 text-primary" />
           </div>
           <div className="absolute bottom-10 -left-2 md:bottom-16 md:-left-4 w-16 h-16 bg-background rounded-full shadow-lg flex items-center justify-center animate-float animation-delay-800">
-            <Volume2 className="h-8 w-8 text-primary" />
+            <Megaphone className="h-8 w-8 text-primary" />
           </div>
         </div>
       </div>
