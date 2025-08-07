@@ -20,7 +20,7 @@ const skillsData = [
   { name: "Content Writing", icon: <FontAwesomeIcon icon={faPenSquare} className="w-10 h-10 text-primary" /> },
   { name: "Next.js", icon: <FontAwesomeIcon icon={faCode} className="w-10 h-10 text-primary" /> },
   { name: "SQL Database", icon: <FontAwesomeIcon icon={faDatabase} className="w-10 h-10 text-primary" /> },
-  { name: "Firebase Studio", icon: <FirebaseStudioIcon className="w-10 h-10" /> },
+  { name: "Firebase Studio", icon: <FirebaseStudioIcon className="w-10 h-10 text-primary" /> },
 ];
 
 export default function Skills() {
