@@ -2,22 +2,23 @@ import {
   Card,
   CardContent,
 } from "@/components/ui/card"
-import { Megaphone, Users, LineChart, Facebook, Presentation, Search, SquarePen, Code, Database, DatabaseZap } from 'lucide-react';
-import { LaravelIcon, CodeigniterIcon } from '@/components/icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBullhorn, faUsers, faChartLine, faPenSquare, faCode, faDatabase, faMagnifyingGlass, faDisplay, faMobileScreen } from '@fortawesome/free-solid-svg-icons';
+import { faLaravel, faFacebook, faCodiepie, faJs, faReact, faHtml5, faCss3Alt, faBootstrap, faPhp, faVuejs } from '@fortawesome/free-brands-svg-icons';
 
 const skillsData = [
-  { name: "Digital Marketing", icon: <Megaphone className="w-10 h-10 text-primary" /> },
-  { name: "Teamwork", icon: <Users className="w-10 h-10 text-primary" /> },
-  { name: "Analytical Skills", icon: <LineChart className="w-10 h-10 text-primary" /> },
-  { name: "Laravel", icon: <LaravelIcon className="w-10 h-10 text-primary" /> },
-  { name: "Meta Ads", icon: <Facebook className="w-10 h-10 text-primary" /> },
-  { name: "Codeigniter", icon: <CodeigniterIcon className="w-10 h-10 text-primary" /> },
-  { name: "Presentation Skills", icon: <Presentation className="w-10 h-10 text-primary" /> },
-  { name: "SEO Optimization", icon: <Search className="w-10 h-10 text-primary" /> },
-  { name: "Content Writing", icon: <SquarePen className="w-10 h-10 text-primary" /> },
-  { name: "Next.js", icon: <Code className="w-10 h-10 text-primary" /> },
-  { name: "SQL Database", icon: <Database className="w-10 h-10 text-primary" /> },
-  { name: "Firebase", icon: <DatabaseZap className="w-10 h-10 text-primary" /> },
+  { name: "Digital Marketing", icon: <FontAwesomeIcon icon={faBullhorn} className="w-10 h-10 text-primary" /> },
+  { name: "Teamwork", icon: <FontAwesomeIcon icon={faUsers} className="w-10 h-10 text-primary" /> },
+  { name: "Analytical Skills", icon: <FontAwesomeIcon icon={faChartLine} className="w-10 h-10 text-primary" /> },
+  { name: "Laravel", icon: <FontAwesomeIcon icon={faLaravel} className="w-10 h-10 text-primary" /> },
+  { name: "Meta Ads", icon: <FontAwesomeIcon icon={faFacebook} className="w-10 h-10 text-primary" /> },
+  { name: "Codeigniter", icon: <FontAwesomeIcon icon={faCodiepie} className="w-10 h-10 text-primary" /> },
+  { name: "Presentation Skills", icon: <FontAwesomeIcon icon={faDisplay} className="w-10 h-10 text-primary" /> },
+  { name: "SEO Optimization", icon: <FontAwesomeIcon icon={faMagnifyingGlass} className="w-10 h-10 text-primary" /> },
+  { name: "Content Writing", icon: <FontAwesomeIcon icon={faPenSquare} className="w-10 h-10 text-primary" /> },
+  { name: "Next.js", icon: <FontAwesomeIcon icon={faCode} className="w-10 h-10 text-primary" /> },
+  { name: "SQL Database", icon: <FontAwesomeIcon icon={faDatabase} className="w-10 h-10 text-primary" /> },
+  { name: "Firebase", icon: <FontAwesomeIcon icon={faCode} className="w-10 h-10 text-primary" /> },
 ];
 
 export default function Skills() {
