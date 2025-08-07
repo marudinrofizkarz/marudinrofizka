@@ -35,7 +35,7 @@ export default function Hero() {
           <Link href="https://github.com/marudinrofizka" target="_blank" rel="noreferrer">
             <Github className="h-7 w-7 hover:text-primary transition-colors" />
           </Link>
-          <Link href="https://www.linkedin.com/in/marudin-rofizka-9a892b109/" target="_blank" rel="noreferrer">
+          <Link href="https://www.linkedin.com/in/marudin-rofizka-4b31b1115/" target="_blank" rel="noreferrer">
             <Linkedin className="h-7 w-7 hover:text-primary transition-colors" />
           </Link>
         </div>
