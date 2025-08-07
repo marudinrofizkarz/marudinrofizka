@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Github, Linkedin, Send, Code, Volume2 } from 'lucide-react';
+import { Github, Linkedin, Send, Download, Code, Volume2 } from 'lucide-react';
 import Image from 'next/image';
 import { Typewriter } from 'react-simple-typewriter'
 
@@ -39,10 +39,15 @@ export default function Hero() {
             <Linkedin className="h-7 w-7 hover:text-primary transition-colors" />
           </Link>
         </div>
-        <div className="delay-400 mt-2">
+        <div className="flex items-center gap-4 delay-400 mt-2">
           <Button asChild size="lg">
             <Link href="#contact">
               Contact Me <Send className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
+          <Button asChild size="lg" variant="outline">
+            <Link href="/Marudin-Rofizka-CV.pdf" target="_blank" rel="noopener noreferrer">
+              Download CV <Download className="ml-2 h-4 w-4" />
             </Link>
           </Button>
         </div>
