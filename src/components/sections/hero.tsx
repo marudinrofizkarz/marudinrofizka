@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="flex flex-col items-start gap-4 text-left order-2 md:order-1">
         <div>
           <h1 className="font-headline text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
-            Marudin Rofizka
+            Marudin Rofizka, S.Kom
           </h1>
           <h3 className="text-xl md:text-2xl text-muted-foreground mt-2">
             <Typewriter
