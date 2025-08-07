@@ -45,9 +45,12 @@ export default function Hero() {
               Contact Me <Send className="ml-2 h-4 w-4" />
             </Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="transition-all duration-300 hover:ring-2 hover:ring-primary hover:ring-offset-2 hover:ring-offset-background">
+          <Button asChild size="lg" variant="outline" className="transition-all duration-300 hover:ring-2 hover:ring-primary hover:ring-offset-2 hover:ring-offset-background relative overflow-hidden">
             <Link href="/Marudin-Rofizka-CV.pdf" target="_blank" rel="noopener noreferrer">
-              Download CV <Download className="ml-2 h-4 w-4" />
+            <span className="absolute -inset-0.5 rounded-lg bg-gradient-to-r from-primary to-secondary opacity-75 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200 animate-tilt"></span>
+              <div className="relative flex items-center">
+                Download CV <Download className="ml-2 h-4 w-4" />
+              </div>
             </Link>
           </Button>
         </div>
