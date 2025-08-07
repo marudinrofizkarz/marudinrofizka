@@ -2,22 +2,22 @@ import {
   Card,
   CardContent,
 } from "@/components/ui/card"
-import { Megaphone, Users, LineChart, Facebook, Presentation, Search, SquarePen } from 'lucide-react';
-import { LaravelIcon, CodeigniterIcon, CorelDrawIcon, MsOfficeIcon, PhotoshopIcon } from '@/components/icons';
+import { Megaphone, Users, LineChart, Facebook, Presentation, Search, SquarePen, Code, Database, DatabaseZap } from 'lucide-react';
+import { LaravelIcon, CodeigniterIcon } from '@/components/icons';
 
 const skillsData = [
   { name: "Digital Marketing", icon: <Megaphone className="w-10 h-10 text-primary" /> },
   { name: "Teamwork", icon: <Users className="w-10 h-10 text-primary" /> },
   { name: "Analytical Skills", icon: <LineChart className="w-10 h-10 text-primary" /> },
-  { name: "CorelDRAW", icon: <CorelDrawIcon className="w-10 h-10 text-primary" /> },
-  { name: "Microsoft Office", icon: <MsOfficeIcon className="w-10 h-10 text-primary" /> },
   { name: "Laravel", icon: <LaravelIcon className="w-10 h-10 text-primary" /> },
   { name: "Meta Ads", icon: <Facebook className="w-10 h-10 text-primary" /> },
   { name: "Codeigniter", icon: <CodeigniterIcon className="w-10 h-10 text-primary" /> },
   { name: "Presentation Skills", icon: <Presentation className="w-10 h-10 text-primary" /> },
-  { name: "Adobe Photoshop", icon: <PhotoshopIcon className="w-10 h-10 text-primary" /> },
   { name: "SEO Optimization", icon: <Search className="w-10 h-10 text-primary" /> },
   { name: "Content Writing", icon: <SquarePen className="w-10 h-10 text-primary" /> },
+  { name: "Next.js", icon: <Code className="w-10 h-10 text-primary" /> },
+  { name: "SQL Database", icon: <Database className="w-10 h-10 text-primary" /> },
+  { name: "Firebase", icon: <DatabaseZap className="w-10 h-10 text-primary" /> },
 ];
 
 export default function Skills() {
