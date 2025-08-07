@@ -16,14 +16,14 @@ export default function Contact() {
             <Mail className="h-10 w-10 text-primary" />
             <div>
               <h3 className="text-xl font-bold">Email</h3>
-              <p className="text-muted-foreground">marudin.rofizka@gmail.com</p>
+              <p className="text-muted-foreground">marudinrofizkarz@gmail.com</p>
             </div>
           </div>
           <div className="flex items-center gap-4">
             <Phone className="h-10 w-10 text-primary" />
             <div>
               <h3 className="text-xl font-bold">WhatsApp</h3>
-              <p className="text-muted-foreground">+62 822-8412-9269</p>
+              <p className="text-muted-foreground">+62 822-1851-6677</p>
             </div>
           </div>
         </div>
