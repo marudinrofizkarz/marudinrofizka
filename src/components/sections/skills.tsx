@@ -5,8 +5,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBullhorn, faUsers, faChartLine, faPenSquare, faCode, faDatabase, faMagnifyingGlass, faDisplay, faMobileScreen } from '@fortawesome/free-solid-svg-icons';
 import { faLaravel, faFacebook, faJs, faReact, faHtml5, faCss3Alt, faBootstrap, faPhp, faVuejs } from '@fortawesome/free-brands-svg-icons';
-import { DatabaseZap } from 'lucide-react';
 import { CodeigniterIcon } from '@/components/icons';
+import { FirebaseStudioIcon } from '@/components/icons/firebasestudio';
 
 const skillsData = [
   { name: "Digital Marketing", icon: <FontAwesomeIcon icon={faBullhorn} className="w-10 h-10 text-primary" /> },
@@ -20,7 +20,7 @@ const skillsData = [
   { name: "Content Writing", icon: <FontAwesomeIcon icon={faPenSquare} className="w-10 h-10 text-primary" /> },
   { name: "Next.js", icon: <FontAwesomeIcon icon={faCode} className="w-10 h-10 text-primary" /> },
   { name: "SQL Database", icon: <FontAwesomeIcon icon={faDatabase} className="w-10 h-10 text-primary" /> },
-  { name: "Firebase", icon: <DatabaseZap className="w-10 h-10 text-primary" /> },
+  { name: "Firebase Studio", icon: <FirebaseStudioIcon className="w-10 h-10" /> },
 ];
 
 export default function Skills() {
