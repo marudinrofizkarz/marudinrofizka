@@ -9,7 +9,13 @@ import {
 
 const experienceData = [
   {
-    date: "Nov 2021 - Present",
+    date: "Feb 2025 - Present",
+    title: "Marketing Communication Section Head",
+    company: "PT. Samara Sejahtera Realty",
+    description: "Leading marketing communication strategies and initiatives to enhance brand visibility and drive property sales.",
+  },
+  {
+    date: "Nov 2021 - Feb 2025",
     title: "Co-Founder Business Development",
     company: "PT KREASI MKMUR PERSADA",
     description: "Leading business development initiatives and digital transformation strategies",
