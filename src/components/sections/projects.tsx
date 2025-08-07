@@ -45,6 +45,30 @@ const projects = [
     image: "https://res.cloudinary.com/diyyyav1i/image/upload/v1754368736/Macbook-Air-localhost_13_v0onpe.png",
     dataAiHint: "dashboard analytics"
   },
+  {
+    title: "Project Four",
+    description: "A brief description of你的 fourth project, highlighting its key features and purpose.",
+    longDescription: "A more detailed description of the project, explaining the technologies used and the problems it solves.",
+    tags: ["SvelteKit", "PocketBase", "Tailwind CSS"],
+    image: "https://placehold.co/600x400.png",
+    dataAiHint: "minimalist website design"
+  },
+  {
+    title: "Project Five",
+    description: "A brief description of your fifth project, highlighting its key features and purpose.",
+    longDescription: "A more detailed description of the project, explaining the technologies used and the problems it solves.",
+    tags: ["Astro", "React", "MDX"],
+    image: "https://placehold.co/600x400.png",
+    dataAiHint: "personal blog homepage"
+  },
+  {
+    title: "Project Six",
+    description: "A brief description of your sixth project, highlighting its key features and purpose.",
+    longDescription: "A more detailed description of the project, explaining the technologies used and the problems it solves.",
+    tags: ["Nuxt.js", "Supabase", "UnoCSS"],
+    image: "https://placehold.co/600x400.png",
+    dataAiHint: "mobile app interface"
+  },
 ];
 
 
