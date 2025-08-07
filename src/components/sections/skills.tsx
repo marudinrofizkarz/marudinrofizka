@@ -1,81 +1,40 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Progress } from "@/components/ui/progress";
-import { Code, Server } from "lucide-react";
+import {
+  Card,
+  CardContent,
+} from "@/components/ui/card"
+import { Megaphone, Users, LineChart, Facebook, Presentation, Search, SquarePen } from 'lucide-react';
+import { LaravelIcon, CodeigniterIcon, CorelDrawIcon, MsOfficeIcon, PhotoshopIcon } from '@/components/icons';
 
-const frontendSkills = [
-  { name: "HTML", level: 90 },
-  { name: "CSS", level: 85 },
-  { name: "JavaScript", level: 80 },
-  { name: "TypeScript", level: 75 },
-  { name: "React", level: 85 },
-  { name: "Next.js", level: 80 },
-  { name: "Tailwind CSS", level: 90 },
-];
-
-const backendSkills = [
-  { name: "Node.js", level: 75 },
-  { name: "Express", level: 70 },
-  { name: "Python", level: 60 },
-  { name: "Django", level: 55 },
-  { name: "PHP", level: 65 },
-  { name: "MySQL", level: 70 },
-  { name: "MongoDB", level: 60 },
+const skillsData = [
+  { name: "Digital Marketing", icon: <Megaphone className="w-10 h-10 text-primary" /> },
+  { name: "Teamwork", icon: <Users className="w-10 h-10 text-primary" /> },
+  { name: "Analytical Skills", icon: <LineChart className="w-10 h-10 text-primary" /> },
+  { name: "CorelDRAW", icon: <CorelDrawIcon className="w-10 h-10 text-primary" /> },
+  { name: "Microsoft Office", icon: <MsOfficeIcon className="w-10 h-10 text-primary" /> },
+  { name: "Laravel", icon: <LaravelIcon className="w-10 h-10 text-primary" /> },
+  { name: "Meta Ads", icon: <Facebook className="w-10 h-10 text-primary" /> },
+  { name: "Codeigniter", icon: <CodeigniterIcon className="w-10 h-10 text-primary" /> },
+  { name: "Presentation Skills", icon: <Presentation className="w-10 h-10 text-primary" /> },
+  { name: "Adobe Photoshop", icon: <PhotoshopIcon className="w-10 h-10 text-primary" /> },
+  { name: "SEO Optimization", icon: <Search className="w-10 h-10 text-primary" /> },
+  { name: "Content Writing", icon: <SquarePen className="w-10 h-10 text-primary" /> },
 ];
 
 export default function Skills() {
   return (
     <section id="skills" className="container space-y-8 py-12 md:py-24">
       <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center animate-in fade-in-up duration-500">
-        <h2 className="font-headline text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">Skills</h2>
-        <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-          My technical level
-        </p>
+        <h2 className="font-headline text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">Skills & Expertise</h2>
       </div>
-      <div className="mx-auto max-w-2xl animate-in fade-in-up duration-500 delay-200">
-        <Accordion type="single" collapsible defaultValue="item-1" className="w-full">
-          <AccordionItem value="item-1">
-            <AccordionTrigger className="text-xl font-headline hover:no-underline">
-              <div className="flex items-center gap-4">
-                <Code className="h-8 w-8 text-primary" />
-                Frontend Developer
-              </div>
-            </AccordionTrigger>
-            <AccordionContent>
-              <div className="space-y-4 pt-4">
-                {frontendSkills.map((skill) => (
-                  <div key={skill.name}>
-                    <div className="flex justify-between mb-1">
-                      <span className="font-medium">{skill.name}</span>
-                      <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                    </div>
-                    <Progress value={skill.level} aria-label={`${skill.name} progress`} />
-                  </div>
-                ))}
-              </div>
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger className="text-xl font-headline hover:no-underline">
-               <div className="flex items-center gap-4">
-                <Server className="h-8 w-8 text-primary" />
-                Backend Developer
-               </div>
-            </AccordionTrigger>
-            <AccordionContent>
-              <div className="space-y-4 pt-4">
-                {backendSkills.map((skill) => (
-                  <div key={skill.name}>
-                    <div className="flex justify-between mb-1">
-                      <span className="font-medium">{skill.name}</span>
-                      <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                    </div>
-                    <Progress value={skill.level} aria-label={`${skill.name} progress`} />
-                  </div>
-                ))}
-              </div>
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 animate-in fade-in-up duration-500 delay-200">
+        {skillsData.map((skill) => (
+          <Card key={skill.name} className="flex flex-col items-center justify-center p-6 text-center transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2">
+            <CardContent className="p-0 flex flex-col items-center justify-center gap-4">
+              {skill.icon}
+              <p className="font-semibold">{skill.name}</p>
+            </CardContent>
+          </Card>
+        ))}
       </div>
     </section>
   );
